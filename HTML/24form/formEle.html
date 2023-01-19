@@ -9,11 +9,12 @@
 </head>
 
 <body>
-    <form action="serverpage.php" method="post">
+    <!-- <form action="serverpage.php" method="post"> -->
+    <form action="serverpage.php" method="post" enctype="multipart/form-data" novalidate>
         <table>
             <tr>
                 <td><label for="username">User Name</label></td>
-                <td><input type="text" name="usernmae" value="TOPS" id="username"></td>
+                <td><input type="text" name="usernmae" value="TOPS" id="username" required></td>
             </tr>
             <tr>
                 <td><label for="">password</label></td>
@@ -21,7 +22,7 @@
             </tr>
             <tr>
                 <td><label for="">email</label></td>
-                <td><input type="email" name="" placeholder="eg:xxx@xxx.xxx" value="" id=""></td>
+                <td><input type="email" name="" autocomplete="on" placeholder="eg:xxx@xxx.xxx" value="" id=""></td>
             </tr>
             <tr>
                 <td><label for="">Mobile</label></td>
@@ -117,6 +118,45 @@
                 <td><label for="">url</label></td>
                 <td>
                     <input type="url" name="" id="">
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="">profile pic</label></td>
+                <td>
+                    <input type="file" name="" id="">
+                    <input type="file" accept="image/*" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ice-cream-choice">Choose a flavor:</label></td>
+                <td>
+                    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+                    <datalist id="ice-cream-flavors">
+                        <option value="Chocolate">
+                        <option value="Coconut">
+                        <option value="Mint">
+                        <option value="Strawberry">
+                        <option value="Vanilla">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Disable</label></td>
+                <td>
+                    <input type="text" disabled name="disabled" value="Something" id="disabled">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Readonly</label></td>
+                <td>
+                    <input type="text" readonly name="disabled" value="Something" id="disabled">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Disable</label></td>
+                <td>
+                    <input type="button" disabled name="disabled" value="Something" id="disabled">
                 </td>
             </tr>
             <tr>
