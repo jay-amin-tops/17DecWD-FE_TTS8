@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .text-align-center {
+        border: 5px solid;
+        text-align: center;
+      }
+      .center-flex-justify-content {
+        border: 5px solid;
+        display: flex;
+        justify-content: center;
+      }
+      .center-padding {
+        border: 5px solid;
+        padding: 50px 0;
+      }
+      .center-line-height {
+        border: 5px solid;
+        height: 150px;
+        line-height: 150px;
+      }
+
+      .center-line-height p {
+        line-height: normal;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .center-align-items {
+        border: 5px solid;
+        display: flex;
+        height: 150px;
+        align-items: center;
+      }
+      /* .center-transform {
+        border: 5px solid;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        padding: 10px;
+      } */
+
+      .parent {
+        background: gray;
+        height: 300px;
+        width: 300px;
+        position: relative;
+      }
+
+      .child {
+        background: orange;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -50px 0 0 -50px;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+
+      .parent-flex {
+        height: 200px;
+        background: gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .child-flex {
+        background-color: orange;
+        width: 100px;
+        height: 100px;
+      }
+      .area {
+        height: 100px;
+        width: 100px;
+        background: red;
+        margin: 10px;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-align-center">text-align-center</div>
+    <div class="center-flex-justify-content">center-flex-justify-content</div>
+    <div class="center-padding">center-padding</div>
+    <div class="center-line-height">
+      <p>The text in this div is centered vertically center-line-height.</p>
+    </div>
+    <div class="center-align-items">
+      <p>
+        The text in this div is centered vertically. display: flex; height:
+        150px; align-items: center;
+      </p>
+    </div>
+    <div class="center-transform">
+      <p>This div is vertically centered.</p>
+    </div>
+    <div class="parent">
+      <div class="child">This div is centered vertically and horizontally.</div>
+    </div>
+    <div class="parent-flex">
+      <div class="child-flex">
+        This div is centered horizontally and vertically.
+      </div>
+    </div>
+    <h3>display: table-cell; vertical-align: middle;</h3>
+    <div class="area">
+        <div class="content">
+            <img src="https://rde.1040.com/1040/Images/info-blue-icon.png"> 
+            <span>INFO</span>
+        </div>
+    </div><br />
+    
+    <div class="area">
+        <div class="content">
+            <p>THIS IS</p>
+            <span>INFO</span>
+        </div>
+    </div>
+  </body>
+</html>
