@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .container {
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .col {
+            flex: 1 0 0;
+            /* flex-basis: 0;
+            flex-grow: 1; */
+        }
+        .menu{
+            background-color: brown;
+            color: white;
+            position: fixed;
+            width: 100%;
+        }
+        .sticky{
+            position: sticky;
+            top: 160px;
+            background-color: teal;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li> position: static;(default)</li>
+        <li> position: relative;</li>
+        <li> position: absolute;</li>
+        <li> position: fixed;</li>
+        <li> position: sticky;</li>
+    </ul>
+    <header>
+        <div class="row menu">
+            <div class="col">logo</div>
+            <div class="col">menu</div>
+        </div>
+    </header>
+    <p>postion fixed will placed containt at fixed place in screen</p>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sticky">
+           <h3>other menu</h3> 
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ratione, quas quaerat explicabo officiis omnis! Corporis molestiae nam quis unde maxime voluptatum praesentium libero delectus ipsa enim laboriosam, saepe animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi officiis ducimus sint deserunt ipsum adipisci facilis veniam modi necessitatibus libero. Laboriosam quis dicta aperiam incidunt vitae consequatur inventore excepturi provident?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ratione, quas quaerat explicabo officiis omnis! Corporis molestiae nam quis unde maxime voluptatum praesentium libero delectus ipsa enim laboriosam, saepe animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi officiis ducimus sint deserunt ipsum adipisci facilis veniam modi necessitatibus libero. Laboriosam quis dicta aperiam incidunt vitae consequatur inventore excepturi provident?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ratione, quas quaerat explicabo officiis omnis! Corporis molestiae nam quis unde maxime voluptatum praesentium libero delectus ipsa enim laboriosam, saepe animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi officiis ducimus sint deserunt ipsum adipisci facilis veniam modi necessitatibus libero. Laboriosam quis dicta aperiam incidunt vitae consequatur inventore excepturi provident?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ratione, quas quaerat explicabo officiis omnis! Corporis molestiae nam quis unde maxime voluptatum praesentium libero delectus ipsa enim laboriosam, saepe animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi officiis ducimus sint deserunt ipsum adipisci facilis veniam modi necessitatibus libero. Laboriosam quis dicta aperiam incidunt vitae consequatur inventore excepturi provident?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ratione, quas quaerat explicabo officiis omnis! Corporis molestiae nam quis unde maxime voluptatum praesentium libero delectus ipsa enim laboriosam, saepe animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi officiis ducimus sint deserunt ipsum adipisci facilis veniam modi necessitatibus libero. Laboriosam quis dicta aperiam incidunt vitae consequatur inventore excepturi provident?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ratione, quas quaerat explicabo officiis omnis! Corporis molestiae nam quis unde maxime voluptatum praesentium libero delectus ipsa enim laboriosam, saepe animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi officiis ducimus sint deserunt ipsum adipisci facilis veniam modi necessitatibus libero. Laboriosam quis dicta aperiam incidunt vitae consequatur inventore excepturi provident?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ratione, quas quaerat explicabo officiis omnis! Corporis molestiae nam quis unde maxime voluptatum praesentium libero delectus ipsa enim laboriosam, saepe animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi officiis ducimus sint deserunt ipsum adipisci facilis veniam modi necessitatibus libero. Laboriosam quis dicta aperiam incidunt vitae consequatur inventore excepturi provident?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ratione, quas quaerat explicabo officiis omnis! Corporis molestiae nam quis unde maxime voluptatum praesentium libero delectus ipsa enim laboriosam, saepe animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi officiis ducimus sint deserunt ipsum adipisci facilis veniam modi necessitatibus libero. Laboriosam quis dicta aperiam incidunt vitae consequatur inventore excepturi provident?</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga a doloribus, similique eos modi, odit
+                    necessitatibus rerum repellendus aspernatur est dolorem placeat voluptatum fugit quis! Odio facere
+                    repellat necessitatibus nulla.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
